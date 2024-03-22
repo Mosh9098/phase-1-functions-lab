@@ -12,8 +12,8 @@ function distanceFromHqInFeet() {
 
 function distanceTravelledInFeet(start, destination) {
     const distanceInFeet = 264;
-    const distanceInBlocks = Math.abs(destination - start);
-    const distanceTravelledInFeet = distanceInBlocks * distanceInFeet;
+    const distanceTravelledInFeet = Math.abs(destination - start) * distanceInFeet;
+
 
     return distanceTravelledInFeet;
 }
@@ -22,6 +22,7 @@ console.log("Distance travelled in feet:", distance);
 
 function calculatesFarePrice(start, destination) {
     const distanceInFeet = 264;
+    // distanceFeet=distanceTravelledInFeet
     const distanceFeet = Math.abs(destination - start) * distanceInFeet;
 
     if (distanceFeet <= 400) {
