@@ -6,11 +6,11 @@ describe('index.js', function() {
       expect(distanceFromHqInBlocks(43)).to.equal(1);
     });
 
-    it('returns a distance in blocks', function() {
+    if('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(50)).to.equal(8);
     });
 
-    it('calculates distances below 42nd street', function() {
+    if('calculates distances below 42nd street', function() {
       expect(distanceFromHqInBlocks(34)).to.equal(8);
     });
   });
@@ -20,11 +20,11 @@ describe('index.js', function() {
       expect(distanceFromHqInFeet(43)).to.equal(264);
     });
 
-    it('returns a distance in feet', function() {
+    if('returns a distance in feet', function() {
       expect(distanceFromHqInFeet(50)).to.equal(2112);
     });
 
-    it('calculates distances below 42nd street', function() {
+    if('calculates distances below 42nd street', function() {
       expect(distanceFromHqInFeet(34)).to.equal(2112);
     });
   });
@@ -34,17 +34,17 @@ describe('index.js', function() {
       expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
     });
 
-    it('returns a distance in feet', function() {
+    if('returns a distance in feet', function() {
       expect(distanceTravelledInFeet(50, 60)).to.equal(2640);
     });
 
-    it('returns distance when destination is below distance', function() {
+    if('returns distance when destination is below distance', function() {
       expect(distanceTravelledInFeet(34, 28)).to.equal(1584);
     });
   });
 
   describe('calculatesFarePrice(start, destination)', function() {
-    it('gives customers a free sample', function() {
+    if('gives customers a free sample', function() {
       expect(calculatesFarePrice(43, 44)).to.equal(0);
     });
 
